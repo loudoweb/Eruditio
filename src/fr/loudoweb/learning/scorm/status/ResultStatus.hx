@@ -8,18 +8,16 @@ import fr.loudoweb.vrac.abstract.AbstractTypeSafe;
 
 class ResultStatus extends AbstractTypeSafe
 {
-	/**
-	 * Réponse correcte.
-	 */
+	
 	public static inline var CORRECT:ResultStatus = new ResultStatus('correct');
 	/**
-	 * Mauvaise réponse. Fonctionne avec scorm 1.2 seulement.
-	 * <p>L'utilisation de cette méthode dans un LMS scorm 2004 génère INCORRECT.</p>
+	 * SCORM 1.2 only.
+	 * <p>Using this in scorm 2004 LMS will return INCORRECT.</p>
 	 */
 	public static inline var WRONG:ResultStatus = new ResultStatus('wrong');
 	/**
-	 * Mauvaise réponse. Fonctionne avec scorm 2004 seulement.
-	 * <p>L'utilisation de cette méthode dans un LMS scorm 1.2 génère WRONG.</p>
+	 * SCORM 2004 only.
+	 * <p>Using this in scorm 1.2 LMS will return WRONG.</p>
 	 */
 	public static inline var INCORRECT:ResultStatus = new ResultStatus('incorrect');
 	
