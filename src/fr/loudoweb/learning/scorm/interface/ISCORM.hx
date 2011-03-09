@@ -150,6 +150,10 @@ interface ISCORM {
 	//																//
 	//																//
 	function setExit(exitStatus:ExitStatus):Bool;
+	/*adl.nav.request (request(continue, previous, choice, exit, exitAll, abandon, abandonAll, suspendAll _none_), RW) Navigation request to be processed immediately following Terminate()
+adl.nav.request_valid.continue (state (true, false, unknown), RO) Used by a SCO to determine if a Continue navigation request will succeed.
+adl.nav.request_valid.previous (state (true, false, unknown), RO) Used by a SCO to determine if a Previous navigation request will succeed.
+adl.nav.request_valid.choice.{target=} (state (true, false, unknown), RO*/
 	
 	// 					UNUSEFULL METHODS							//
 	//															 	//
